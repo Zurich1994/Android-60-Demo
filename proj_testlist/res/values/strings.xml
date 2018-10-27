@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MinnActivity!</string>
+    <string name="app_name">Proj_testlist</string>
+    <string-array name="spinnerdata">
+    <item>Service,address,city</item>
+    <item>Condition,address,PO Number,time</item>
+    </string-array>
+</resources>

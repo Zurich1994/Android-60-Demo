@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project default="main" basedir=".">
+	<!--创建目录-->
+	<target name="init">
+		<mkdir dir="build\classes" />
+		<mkdir dir="build\classes2" />
+	</target>
+	<!--编译所有的包到目标目录-->
+	<target name="compile" depends="init">
+		<javac srcdir="src\com\test" destdir="build\classes" />
+		<javac srcdir="src\com\fit\inter" destdir="build\classes2" />
+		<javac srcdir="src\com\test1" destdir="build\classes2" />
+	</target>
+
+	<!--将已编译的打成jar包-->
+	<target name="build" depends="compile">
+		<jar jarfile="test3.jar" basedir="build\classes" />
+		<jar jarfile="test4.jar" basedir="build\classes2" />
+	</target>
+
+	<!--运行程序-->
+	<target name="main" depends="build">
+		<!--运行指定的程序-->
+		<java classname="com.test.Test">
+			<classpath>
+				<pathelement path="build\classes" />
+			</classpath>
+		</java>
+		
+		<!--运行指定的程序-->
+		<java classname="com.test.Test2">
+			<classpath>
+				<pathelement path="build\classes" />
+			</classpath>
+		</java>
+		
+		<!--运行指定的程序-->
+		<java classname="com.test1.Test4">
+			<classpath>
+				<pathelement path="build\classes2" />
+			</classpath>
+		</java>
+	</target>
+
+</project>

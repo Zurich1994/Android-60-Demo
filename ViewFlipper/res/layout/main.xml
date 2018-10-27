@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ViewFlipper android:id="@+id/flipper"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<include android:id="@+id/first" layout="@layout/first"/>
+		<include android:id="@+id/second" layout="@layout/second"/>
+		<include android:id="@+id/third" layout="@layout/third"/>
+		<include android:id="@+id/fourth" layout="@layout/fourth"/>
+	</ViewFlipper>
+</LinearLayout>

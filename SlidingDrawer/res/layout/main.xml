@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#63B8FF">
+	
+	<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textSize="20px"
+				android:textStyle="bold" android:text="This is a new word---------------- 03!!!" />
+	
+	<SlidingDrawer android:id="@+id/slidingdrawer"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical" android:handle="@+id/handle"
+		android:content="@+id/content">
+
+		<Button android:id="@+id/handle" android:layout_width="fill_parent"
+			android:layout_height="44dip" android:background="@drawable/handle" />
+		<LinearLayout android:id="@+id/content"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:background="#00ff00">
+			<Button android:id="@+id/button" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Button" />
+			<EditText android:id="@+id/editText" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textSize="20px"
+				android:textStyle="bold" android:text="This is a new word---------------- 01!!!" />
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textSize="20px"
+				android:textStyle="bold" android:text="This is a new word---------------- 02!!!" />
+		</LinearLayout>
+	</SlidingDrawer>
+
+
+</LinearLayout>

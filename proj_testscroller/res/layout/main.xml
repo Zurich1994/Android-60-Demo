@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ScrollView android:id="@+id/scrollview1"
+		android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1">
+		<LinearLayout android:id="@+id/LinearLayout02"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView android:id="@+id/aboutustitle" android:text="About Cross Country"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:gravity="left" android:textSize="20sp" android:textColor="#a8c4eb" />
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="5dip"
+				android:textSize="13sp" android:textColor="#bdbebd" android:id="@+id/aboutustext" />
+			<ImageView android:id="@+id/baricon" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginBottom="15dip"
+				android:layout_marginTop="15dip" android:src="@drawable/line_horizontal" />
+
+			<TextView android:id="@+id/termsandconditionstitle"
+				android:text="Terms of Service" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:gravity="left"
+				android:textSize="20sp" android:textColor="#a8c4eb" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Last updated on 01/12/2011"
+				android:textColor="#bdbebd" android:textSize="12sp"
+				android:textStyle="italic" android:id="@+id/termsandconditionstextsubtitle" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="12sp"
+				android:textColor="#bdbebd" android:id="@+id/termsandconditionstext" />
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center" android:layout_marginBottom="10dp">
+		<Button android:text="Accept" android:layout_width="100dp"
+			android:layout_height="wrap_content" />
+		<Button android:text="Decline" android:layout_width="100dp"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>
